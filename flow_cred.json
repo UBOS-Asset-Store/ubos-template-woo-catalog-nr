@@ -1,0 +1,16 @@
+{
+    "c156d588bb3ba207": {
+        "userid": "dafarlog@gmail.com",
+        "password": "gpdy fdsk ywdt vgih"
+    },
+    "eef59e6e9401d087": {},
+    "f35a4cbb4c138ff6": {
+        "user": "d.v.hlushko7833",
+        "password": "jgjFcZYj"
+    },
+    "5e3060d0cefc70f4": {},
+    "acbe556b4e16a2c1": {
+        "user": "${DB_USER}",
+        "password": "${DB_PASSWORD}"
+    }
+}
