@@ -10,7 +10,7 @@
     },
     "5e3060d0cefc70f4": {},
     "acbe556b4e16a2c1": {
-        "user": "${DB_USER}",
-        "password": "${DB_PASSWORD}"
+        "user": "${CATALOGDB-MONGO-USER-NAME}",
+        "password": "${CATALOGDB-MONGO-PASSWORD}"
     }
 }

@@ -541,11 +541,11 @@
     {
         "id": "acbe556b4e16a2c1",
         "type": "mongodb",
-        "hostname": "${DB_HOST}",
+        "hostname": "${CATALOGDB-MONGO-HOST-NAME}",
         "topology": "direct",
         "connectOptions": "authSource=admin",
         "port": "27017",
-        "db": "${DATABASE}",
+        "db": "${CATALOGDB-MONGO-DB-NAME}",
         "name": "env_mongo"
     },
     {
