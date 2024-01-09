@@ -72,6 +72,14 @@
         "env": []
     },
     {
+        "id": "efbb97391aefca4c",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "9c49629805242044",
         "type": "subflow",
         "name": "Check slug",
@@ -528,27 +536,9 @@
             "db3d8a0225404425"
         ],
         "x": 14,
-        "y": 19
-    },
-    {
-        "id": "eef59e6e9401d087",
-        "type": "mongodb",
-        "hostname": "127.0.0.1",
-        "topology": "direct",
-        "connectOptions": "",
-        "port": "27017",
-        "db": "",
-        "name": ""
-    },
-    {
-        "id": "f35a4cbb4c138ff6",
-        "type": "mongodb",
-        "hostname": "mongo-ubos-b4vgb-mongo.ubos-b4vgb",
-        "topology": "direct",
-        "connectOptions": "authSource=admin",
-        "port": "27017",
-        "db": "mongo",
-        "name": "mongo"
+        "y": 19,
+        "w": 1732,
+        "h": 542
     },
     {
         "id": "acbe556b4e16a2c1",
@@ -5450,7 +5440,7 @@
         "type": "function",
         "z": "2d9205901ae51ca8",
         "name": "function 3",
-        "func": "let process_env = {\n    WOOCOMMERCE_CONSUMER_SECRET_WORKER: \"cs_67de52075be981454d7d7a52297bc11b85b482f0\",\n    BASE_URL: \"https://worker.wf.tadiranforce.co.il/wp-json/wc/v3/\",\n    WOOCOMMERCE_CONSUMER_KEY_WORKER: \"ck_a933ca8652a19899ba69040f006b8beb092392f9\",\n}\n\n// process_env.WOOCOMMERCE_CONSUMER_KEY_WORKER}:${\n//     process_env.WOOCOMMERCE_CONSUMER_SECRET_WORKER\nglobal.set(\"process_env\", process_env)\nreturn msg;\n\n\n",
+        "func": "let process_env = {\n    WOOCOMMERCE_CONSUMER_SECRET: env.get(\"WOOCOMMERCE_CONSUMER_SECRET\"),\n    BASE_URL: env.get(\"BASE_URL\"),\n    WOOCOMMERCE_CONSUMER_KEY_WORKER: env.get(\"WOOCOMMERCE_CONSUMER_KEY\"),\n}\n\n// process_env.WOOCOMMERCE_CONSUMER_KEY_WORKER}:${\n//     process_env.WOOCOMMERCE_CONSUMER_SECRET_WORKER\nglobal.set(\"process_env\", process_env)\nreturn msg;\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
